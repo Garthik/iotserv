@@ -1,0 +1,9 @@
+{application, iotserv,
+ [{description, "IoT Device Management Server"},
+  {vsn, "0.1.0"},
+  {registered, [iotserv, iotserv_sup]},
+  {mod, {iotserv_app, []}},
+  {applications, [kernel, stdlib]},
+  {env, [{config_file, "config.json"}, {dets_file, "iotserv.dat"}]},
+  {modules, []}
+ ]}.
